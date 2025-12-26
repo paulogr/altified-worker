@@ -1,0 +1,8 @@
+name = "altified-worker"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+ALTIFIED_BACKEND = "https://api.altified.com"
+ALTIFIED_API_KEY = "123456"
+DOMAIN = "www.luftshoes.com"

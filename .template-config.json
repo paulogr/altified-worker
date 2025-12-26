@@ -1,0 +1,75 @@
+{
+  "name": "Altified Translation Worker",
+  "description": "Automatically translate your website into multiple languages with AI-powered translation. Supports 50+ languages with automatic browser language detection and SEO optimization.",
+  "repository": "https://github.com/benedictowusu/worker",
+  "demo": "https://altified.com",
+  "tags": [
+    "translation",
+    "i18n",
+    "internationalization",
+    "multilingual",
+    "localization",
+    "AI",
+    "SEO"
+  ],
+  "category": "Internationalization",
+  "author": {
+    "name": "Altified",
+    "url": "https://altified.com",
+    "email": "support@altified.com"
+  },
+  "icon": "🌐",
+  "version": "1.0.0",
+  "compatibilityDate": "2025-01-01",
+  "license": "MIT",
+  
+  "prompts": [
+    {
+      "name": "ALTIFIED_API_KEY",
+      "label": "Altified API Key",
+      "description": "Your API key from altified.com/dashboard. Sign up for free to get started.",
+      "type": "secret",
+      "required": true,
+      "placeholder": "alt_xxxxxxxxxxxxxxxxxx"
+    },
+    {
+      "name": "DOMAIN",
+      "label": "Your Website Domain",
+      "description": "The full URL of your website (including https://)",
+      "type": "text",
+      "required": true,
+      "placeholder": "https://example.com",
+      "validation": {
+        "pattern": "^https?://",
+        "message": "Domain must start with http:// or https://"
+      }
+    }
+  ],
+  
+  "features": [
+    "🌍 Translate into 100+ languages automatically",
+    "🤖 AI-powered translation with context awareness",
+    "🔍 SEO optimized with hreflang tags and language metadata",
+    "⚡ Automatic browser language detection",
+    "🎨 Built-in language switcher UI",
+    "📱 Works with any website or framework",
+    "⚙️ Translates <head> metadata (title, description, OG tags)",
+    "🚀 Lazy loading for below-the-fold content",
+    "💾 Smart caching for faster performance"
+  ],
+  
+  "requirements": {
+    "cloudflare": {
+      "workers": true,
+      "kv": false,
+      "durable_objects": false,
+      "r2": false
+    }
+  },
+  
+  "links": {
+    "documentation": "https://altified.com/docs",
+    "support": "https://altified.com/support",
+    "pricing": "https://altified.com/pricing"
+  }
+}
